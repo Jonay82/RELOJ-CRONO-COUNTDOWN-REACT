@@ -1,0 +1,175 @@
+body {
+  margin:0px;
+  padding: 0px;
+  font-family: 'Tahoma';
+  font-size: 2rem;
+  color:rgb(255, 255, 255);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(79, 79, 79);
+  
+
+
+}
+.master-container{
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  flex-wrap: wrap;
+  margin: 5px;
+  
+}
+.container-back-digi{
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  width: 33%;
+  height: 55rem;
+  margin: 1px;
+  /*
+   flex-basis: 0rem;
+  
+ 
+  */
+  background-image: url(https://p4.wallpaperbetter.com/wallpaper/440/252/836/bokeh-clock-pocket-time-wallpaper-preview.jpg);
+  background-repeat:no-repeat;
+  background-size: cover;
+  background-position-x: left;
+
+}
+.container-back-count{
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  width: 33%;
+  height: 55rem;
+  margin: 1px;
+  background-image: url(https://besthqwallpapers.com/Uploads/2-8-2021/172691/moonlight-4k-bright-moon-night-minimal.jpg);
+  background-repeat:no-repeat;
+  background-size: cover;
+  background-position-x: right;
+}
+.container-back-stop{
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  width: 33%;
+  height: 55rem;
+  margin: 1px;
+
+  background-image: url(https://besthqwallpapers.com/Uploads/6-5-2020/132017/hourglass-time-concepts-glass-hourglass-motion-blur-life-concepts.jpg);
+  background-repeat:no-repeat;
+  background-size: cover;
+  background-position: right;
+}
+
+
+.container-DG , .countdown{
+  display: flex;
+  
+  font-family: 'Tahoma';
+  font-size: auto;
+  
+
+}
+
+.stopwatch{
+   display: flex;
+   flex-direction: column;
+   align-content: center;
+}
+
+.box-t{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.t{
+  display:flex;
+  width: 50px;
+  height: 30px;
+}
+
+.container-box{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /*width: 100%;
+  height: 190px;*/
+
+}
+
+.box{
+ display:flex;
+ align-items: center;
+}
+
+.box-counter{
+  display:flex;
+  
+}
+
+.box-btn{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items:center;
+  margin: 20px;
+}
+ 
+.btn-Stop{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  cursor: pointer;
+  color: rgb(255, 119, 0);
+  
+  text-transform:capitalize;
+  font-size: 1rem;
+  background-color: transparent;
+  border: 2px solid rgb(255, 119, 0);
+  border-radius: 5px;
+  width: 100px;
+  height: 40px;
+  margin: 3px;
+
+ 
+}
+.btn-Stop::before{
+    content:"";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+    background-color: rgb(255, 119, 0);
+    transition: all 700ms ease;
+    z-index: -1;
+  }
+  .btn-Stop:hover{
+    animation: shadow-pulse 1500ms 3;
+    background-color:rgb(255, 119, 0);
+    color:rgb(79, 79, 79);
+  }
+@keyframes shadow-pulse{
+  0%{
+    box-shadow: rgb(255, 119, 0);
+  }
+  100%{
+    box-shadow: 0 0 15px 15px  rgb(255, 119, 0);
+  }
+}
+
+
+/*
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+*/
